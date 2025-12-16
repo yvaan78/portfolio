@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos & Compétences - Mon Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <!-- BARRE DE NAVIGATION -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-center items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition">
+            </a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Présentation</a>
+                <!-- Lien Actif -->
+                <a href="apropos.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">À propos</a>
+                <a href="veille.html" class="text-gray-600 hover:text-blue-600 transition">Veille</a>
+                <a href="Tableau_de_synthese_E5.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 transition">Tableau de Synthèse</a>
+                <a href="Cv étudiant yvan.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 transition">CV</a>
+                <a href="projets.html" class="text-gray-600 hover:text-blue-600 transition">Mes Projets</a>
+            </div>
+        </div>
+    </nav>
+
+     <main class="flex-grow relative py-20"
+          style="background-image: url('backgroundsonic.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        
+        <!-- Calque blanc transparent pour la lisibilité (Opacité 85%) -->
+        <div class="absolute inset-0 bg-white/85"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="container mx-auto px-6 py-12 flex-grow">
+        
+        <!-- Introduction Personnelle (Bio) -->
+        <div class="bg-white p-8 rounded-xl shadow-sm mb-12 border-t-4 border-blue-600">
+            <h1 class="text-3xl font-bold text-gray-900 mb-4">Qui suis-je ?</h1>
+            <div class="text-gray-700 leading-relaxed space-y-4 text-lg">
+                <p>
+                    Âgé de <strong>19 ans</strong>, je suis actuellement en deuxième année de <strong>BTS SIO</strong> (Services Informatiques aux Organisations) au <strong>campus Charles de Foucauld à Paris</strong>.
+                </p>
+                <p>
+                    Essayant de me passionner pour l'informatique, je suis motivé à apprendre les différents langages de programmation. Sérieux et aimant relever des défis en équipe, je souhaite poursuivre mes études dans ce domaine pour me perfectionner.
+                </p>
+                <p class="italic text-gray-500 text-base">
+                    "Ce portfolio présente mon parcours et mes projets en tant qu’étudiant, et je reste ouvert à toute opportunité d’échange ou de collaboration pour enrichir mon expérience."
+                </p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            
+            <!-- COLONNE GAUCHE : Compétences Techniques -->
+            <div class="space-y-8">
+                
+                <!-- Bloc 1 : Cœur de compétences (2ème Année) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-600">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="text-2xl mr-2">💻</span> Développement Avancé
+                        <span class="ml-auto text-xs font-normal text-blue-600 bg-blue-50 px-2 py-1 rounded">Focus 2ème Année</span>
+                    </h3>
+                    <div class="space-y-3">
+                        <!-- Java -->
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="text-base font-medium text-gray-700">Java</span>
+                            <span class="text-sm font-medium text-gray-500">En cours d'acquisition</span>
+                        </div>
+                        <!-- PHP -->
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="text-base font-medium text-gray-700">PHP (Laravel)</span>
+                            <span class="text-sm font-medium text-gray-500">En cours d'acquisition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloc 2 : Les Fondamentaux (1ère Année) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-500">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="text-2xl mr-2">🛠️</span> Les Fondamentaux
+                        <span class="ml-auto text-xs font-normal text-green-600 bg-green-50 px-2 py-1 rounded">Acquis 1ère Année</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-semibold border border-gray-200">Python</span>
+                        <span class="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-semibold border border-gray-200">Langage C</span>
+                        <span class="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-semibold border border-gray-200">HTML5 / CSS3</span>
+                        <span class="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-semibold border border-gray-200">MySQL</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 italic">
+                        Ces langages m'ont permis de comprendre la logique algorithmique et la structure des données.
+                    </p>
+                </div>
+
+                <!-- Bloc 3 : Découverte & Stage -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-yellow-500">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="text-2xl mr-2">🚀</span> Initiation & Découverte
+                        <span class="ml-auto text-xs font-normal text-yellow-700 bg-yellow-50 px-2 py-1 rounded">Stage</span>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Durant mon stage, j'ai eu l'opportunité de travailler avec des technologies modernes via l'outil <strong>Tempo</strong>.
+                    </p>
+                    <div class="space-y-3">
+                        <!-- JS / TS -->
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="text-base font-medium text-gray-700">JavaScript / TypeScript</span>
+                            <span class="text-sm font-medium text-yellow-600">Découverte</span>
+                        </div>
+                    </div>
+
+                    <!-- Liens vers le projet -->
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <p class="text-sm font-semibold text-gray-700 mb-3">Projet réalisé : <span class="text-yellow-600">PA2L</span></p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://aebabef4-4764-4dc0-aae5-60b1f4e07148.canvases.tempo.build/" target="_blank" class="flex-1 text-center px-4 py-2 bg-yellow-500 text-white rounded-lg text-sm font-medium hover:bg-yellow-600 transition flex items-center justify-center shadow-sm">
+                                🌐 Voir le prototype
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COLONNE DROITE : Parcours & Hobbies -->
+            <div class="space-y-8">
+                
+                <!-- Parcours (Timeline) -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-6">Mon Parcours</h3>
+                    
+                    <ol class="relative border-l border-gray-200">                  
+                        <!-- Actuellement -->
+                        <li class="mb-10 ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
+                                <span class="w-3 h-3 bg-blue-600 rounded-full"></span>
+                            </span>
+                            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">BTS SIO - 2ème Année</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Campus Charles de Foucauld, Paris</time>
+                            <p class="mb-4 text-base font-normal text-gray-500">
+                                Approfondissement du développement objet (Java) et web (PHP).
+                            </p>
+                        </li>
+
+                        <!-- Stage -->
+                        <li class="mb-10 ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-yellow-100 rounded-full -left-3 ring-8 ring-white">
+                                <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                            </span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900">Stage Développeur</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Année dernière</time>
+                            <p class="text-base font-normal text-gray-500">
+                                Création de prototypes (PA2L) avec l'outil Tempo utilisant du JavaScript et TypeScript.
+                            </p>
+                        </li>
+
+                        <!-- 1ère Année -->
+                        <li class="mb-10 ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full -left-3 ring-8 ring-white">
+                                <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                            </span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900">BTS SIO - 1ère Année</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Début de formation</time>
+                            <p class="text-base font-normal text-gray-500">
+                                Découverte des langages de programmation (C, Python, PHP, SQL).
+                            </p>
+                        </li>
+
+                        <!-- Baccalauréat (Ajouté) -->
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-gray-200 rounded-full -left-3 ring-8 ring-white">
+                                <span class="w-3 h-3 bg-gray-500 rounded-full"></span>
+                            </span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900">Baccalauréat Général</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2023 - 2024</time>
+                            <p class="text-base font-normal text-gray-500">
+                                Options <strong>Mathématiques</strong> et <strong>Physique-Chimie</strong>.<br>
+                                Cette option m'a développé m'a permis de m'intéresser aux mathématiques appliquées à l'informatique.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Passions & Loisirs (Nouveau Bloc) -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-purple-500">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-2xl mr-2">🎯</span> Mes Centres d'Intérêt
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="mr-2 mt-1">🏋️</span>
+                            <span><strong>Sport :</strong> Pratique de la musculation en salle depuis l'obtention du bac.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 mt-1">🎵</span>
+                            <span><strong>Musique :</strong> Grand amateur de Rock des années 2000 et de Rap (Français & Américain).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 mt-1">🎬</span>
+                            <span><strong>Culture Pop :</strong> Fan de l'univers <strong>Marvel</strong> et <strong>DC Comics</strong>. J'apprécie également les films qui nourrissent l'imagination.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 mt-1">📚</span>
+                            <span><strong>Lecture :</strong> Nouvelle passion débutée en décembre 2024.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 mt-1">🎮</span>
+                            <span><strong>Jeux Vidéo :</strong> Très grand fan de <strong>Nintendo</strong> (Mario) et inconditionnel de <strong>Sonic</strong> (Sega).</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

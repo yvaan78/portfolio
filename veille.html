@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Mon Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <!-- BARRE DE NAVIGATION -->
+    <nav class="bg-white shadow-md relative z-20">
+        <div class="container mx-auto px-6 py-4 flex justify-center items-center">
+            <div class="space-x-4 hidden md:flex">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Présentation</a>
+                <a href="apropos.html" class="text-gray-600 hover:text-blue-600 transition">À propos</a>
+                <!-- Lien Actif -->
+                <a href="veille.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Veille</a>
+                <a href="Tableau_de_synthese_E5.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 transition">Tableau de Synthèse</a>
+                <a href="Cv étudiant yvan.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 transition">CV</a>
+                <a href="projets.html" class="text-gray-600 hover:text-blue-600 transition">Mes Projets</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow relative py-20"
+          style="background-image: url('backgroundsonic.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        
+        <!-- Calque blanc transparent pour la lisibilité (Opacité 85%) -->
+        <div class="absolute inset-0 bg-white/85"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="container mx-auto px-6 py-12 flex-grow">
+        
+        <div class="text-center mb-16">
+            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Sujet de Veille</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-4 mb-6">L'IA dans le Développement Web</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Comment l'Intelligence Artificielle transforme-t-elle le métier de développeur, de l'écriture du code à l'expérience utilisateur ?
+                space-x-4</p>
+                 Pour réaliser ma veille technologique sur l’intelligence artificielle dans le développement web, 
+                 j’ai consulté des articles récents directement sur Google et complété mes recherches par des vidéos pédagogiques sur YouTube.
+                 Cette démarche m’a permis de suivre l’actualité et de comprendre les dernières évolutions du domaine.
+            </p>
+        </div>
+
+        <!-- Section 1 : Constat & Définition -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-12 flex flex-col md:flex-row">
+            <div class="md:w-1/3 bg-gradient-to-br from-indigo-600 to-blue-500 p-8 text-white flex flex-col justify-center">
+                <h2 class="text-2xl font-bold mb-4">Une Révolution en cours</h2>
+                <p class="opacity-90 leading-relaxed">
+                    L'IA n'est plus un simple assistant. Elle est devenue un Outil quotidien pour les développeurs, capable de générer du code, de déboguer, de créer et d'optimiser des applications en temps réel.
+                </p>
+            </div>
+            <div class="md:w-2/3 p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Les 3 Piliers de l'IA dans le developpement Web</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-3"></div>
+                        <h4 class="font-bold text-sm">Productivité</h4>
+                        <p class="text-xs text-gray-500 mt-1">Automatisation des tâches répétitives et du code fonctionnelles.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-3"></div>
+                        <h4 class="font-bold text-sm">Qualité</h4>
+                        <p class="text-xs text-gray-500 mt-1">Détection de bugs, suggestions d'optimisation et tests unitaires.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-3"></div>
+                        <h4 class="font-bold text-sm">Créativité</h4>
+                        <p class="text-xs text-gray-500 mt-1">La génération d'images, de textes et d'interfaces utilisateur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 : Les Outils du Marché -->
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Les Outils Incontournables</h2>
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            
+            <!-- Outil 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl mr-3"></span>
+                    <h3 class="text-xl font-bold">GitHub Copilot</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4">
+                    L'assistant le plus connu, intégré directement dans VS Code. Il complète le code en temps réel et propose des fonctions entières basées sur le contexte.
+                </p>
+                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Autocomplétion</span>
+            </div>
+
+            <!-- Outil 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl mr-3"></span>
+                    <h3 class="text-xl font-bold">ChatGPT</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4">
+                 
+                </p>
+                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Assistance & Apprentissage</span>
+            </div>
+
+            <!-- Outil 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl mr-3"></span>
+                    <h3 class="text-xl font-bold">Deepseek</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4">
+                    La nouvelle génération d'outils capables de générer des interfaces complètes (UI) et des applications fonctionnelles à partir d'un simple prompt.
+                </p>
+                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Génération d'UI</span>
+            </div>
+        </div>
+
+        <!-- Section 3 : Analyse Critique (Le plus important pour le jury !) -->
+        <div class="grid md:grid-cols-2 gap-12">
+            
+            <!-- Avantages -->
+            <div>
+                <h3 class="text-2xl font-bold text-green-700 mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Les Opportunités
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">1</span>
+                        <p class="text-gray-700"><strong>Accélération du développement :</strong> Réduction drastique du temps passé sur le code "boilerplate" (structure de base).</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">2</span>
+                        <p class="text-gray-700"><strong>Apprentissage continu :</strong> L'IA agit comme un tuteur personnel pour expliquer des erreurs ou de nouveaux concepts afin de pouvoir comprendre.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">3</span>
+                        <p class="text-gray-700"><strong>Accessibilité :</strong> Facilite l'entrée dans le code pour les débutants grâce aux explications en langage naturel.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Limites / Risques -->
+            <div>
+                <h3 class="text-2xl font-bold text-red-700 mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    Les Menaces
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="bg-red-100 text-red-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">1</span>
+                        <p class="text-gray-700"><strong>Qualité du code & Sécurité :</strong> L'IA peut générer du code faillible ou obsolète. La relecture humaine reste indispensable.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-red-100 text-red-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">2</span>
+                        <p class="text-gray-700"><strong>Dépendance :</strong> Le risque de ne plus savoir coder "from scratch" mais encore de ne plus savoir coder tout court.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-red-100 text-red-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">3</span>
+                        <p class="text-gray-700"><strong>Propriété intellectuelle :</strong> Questions juridiques sur l'origine du code généré par les modèles.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Conclusion -->
+        <div class="mt-16 bg-blue-50 p-8 rounded-2xl text-center border border-blue-100">
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Conclusion : Le développeur "Pilote"</h3>
+            <p class="text-blue-800 max-w-2xl mx-auto">
+                L'IA remplacera les developpeurs bas niveau, et les développeurs qui surconsomment l'IA seront également remplacés. De nos jours, les entreprises cherchent des developpeurs qui savent "coder du pur" sans intelligence Artificielle.
+            </p>
+        </div>
+
+        <!-- Sources et Références (Nouvelle Section) -->
+        <div class="mt-16 border-t border-gray-200 pt-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Sources et Références</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Source 1 : Digidop -->
+                <article class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition">
+                    <h4 class="font-bold text-indigo-700 mb-2">Digidop : Révolution Technologique</h4>
+                    <p class="text-sm text-gray-600 mb-4 h-20 overflow-hidden">
+                        L'article détaille comment l'IA transforme le métier, de l'émergence d'outils comme Claude et Cursor, jusqu'à l'évolution du développeur vers un rôle de superviseur et d'architecte.
+                    </p>
+                    <a href="https://www.digidop.com/fr/blog/ia-et-developpement-web-revolution-technologique-en-cours" target="_blank" class="text-sm font-semibold text-blue-600 hover:underline">Lire l'article &rarr;</a>
+                </article>
+
+                <!-- Source 2 : iQuesta -->
+                <article class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition">
+                    <h4 class="font-bold text-indigo-700 mb-2">iQuesta : L'Avenir des Développeurs</h4>
+                    <p class="text-sm text-gray-600 mb-4 h-20 overflow-hidden">
+                        Une analyse affirmant que l'IA ne remplacera pas les développeurs mais deviendra un assistant indispensable. L'accent est mis sur la nécessité d'acquérir de nouvelles compétences pour rester compétitif.
+                    </p>
+                    <a href="https://www.iquesta.com/Article-Lia-Et-Lavenir-Des-Developpeurs-En-Informatique-Quoi-Attendre-228.html" target="_blank" class="text-sm font-semibold text-blue-600 hover:underline">Lire l'article &rarr;</a>
+                </article>
+
+                <!-- Source 3 : O'clock -->
+                <article class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition">
+                    <h4 class="font-bold text-red-700 mb-2">O'clock : Mise en garde Juniors</h4>
+                    <p class="text-sm text-gray-600 mb-4 h-20 overflow-hidden">
+                        Pourquoi il est déconseillé aux juniors d'utiliser ChatGPT trop tôt : cela freine l'apprentissage de la logique algorithmique et expose à des erreurs que seul un expert peut détecter.
+                    </p>
+                    <a href="https://oclock.io/pourquoi-on-deconseille-aux-jeunes-developpeurs-dutiliser-chatgpt" target="_blank" class="text-sm font-semibold text-blue-600 hover:underline">Lire l'article &rarr;</a>
+                </article>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
