@@ -15,224 +15,203 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
-    <!-- BARRE DE NAVIGATION -->
     <nav class="bg-white shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-center items-center">
-           
             <div class="space-x-4 hidden md:flex">
                 <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Présentation</a>
                 <a href="apropos.html" class="text-gray-600 hover:text-blue-600 transition">À propos</a>
                 <a href="veille.html" class="text-gray-600 hover:text-blue-600 transition">Veille</a>
                 <a href="Tableau_de_synthese_E5.pdf" class="text-gray-600 hover:text-blue-600 transition">Tableau de Synthèse</a>
                 <a href="Cv étudiant yvan.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 transition">CV</a>
-                <!-- Lien Actif -->
                 <a href="projets.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Mes Projets</a>
             </div>
         </div>
     </nav>
 
-<main class="flex-grow relative py-20"
-          style="background-image: url('backgroundsonic.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="flex-grow relative py-20" style="background-image: url('backgroundsonic.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
         
-        <!-- Calque blanc transparent pour la lisibilité (Opacité 85%) -->
         <div class="absolute inset-0 bg-white/85"></div>
 
         <div class="container mx-auto px-6 relative z-10">
             
-    <!-- CONTENU PRINCIPAL -->
-    <main class="container mx-auto px-6 py-12 flex-grow">
-        
-        <div class="text-center mb-16">
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">Mes Réalisations</h1>
-            <p class="text-xl text-gray-600">Voici le projet sur lesquel j'ai travaillé, notamment lors de mon stage.</p>
-        </div>
-
-        <!-- CARTE PROJET : PA2L -->
-        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 max-w-5xl mx-auto flex flex-col md:flex-row">
-            
-            <!-- Partie Visuelle (Gauche) -->
-            <div class="w-full md:w-2/5 bg-padel-blue p-8 flex flex-col justify-center items-center text-white relative overflow-hidden">
-                <!-- Cercle décoratif jaune -->
-                <div class="absolute -top-10 -left-10 w-40 h-40 bg-padel-yellow rounded-full opacity-20 blur-xl"></div>
-                
-                <h2 class="text-5xl font-extrabold mb-2 relative z-10">PA2L</h2>
-                <span class="text-padel-yellow font-semibold tracking-wider relative z-10">PADEL MATCHMAKING</span>
-                
-                <div class="mt-8 bg-white/10 backdrop-blur-sm p-4 rounded-lg text-sm text-center">
-                    <p>📱 Prototype Mobile</p>
-                    <p>⚡ Réalisé avec Tempo</p>
-                </div>
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Mes Réalisations</h1>
+                <p class="text-xl text-gray-600">Voici les projets sur lesquels j'ai travaillé, notamment lors de mon stage et en formation.</p>
             </div>
 
-            <!-- Partie Contenu (Droite) -->
-            <div class="w-full md:w-3/5 p-8 md:p-12">
-                <div class="flex items-center mb-6">
-                    <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mr-3">Projet de Stage</span>
-                    <span class="text-gray-500 text-sm">Application Mobile & UX/UI</span>
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 max-w-5xl mx-auto flex flex-col md:flex-row mb-12">
+                
+                <div class="w-full md:w-2/5 bg-padel-blue p-8 flex flex-col justify-center items-center text-white relative overflow-hidden">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-padel-yellow rounded-full opacity-20 blur-xl"></div>
+                    <h2 class="text-5xl font-extrabold mb-2 relative z-10">PA2L</h2>
+                    <span class="text-padel-yellow font-semibold tracking-wider relative z-10">PADEL MATCHMAKING</span>
+                    <div class="mt-8 bg-white/10 backdrop-blur-sm p-4 rounded-lg text-sm text-center">
+                        <p> Prototype Mobile</p>
+                        <p> Réalisé avec Tempo</p>
+                    </div>
                 </div>
 
-                <h3 class="text-3xl font-bold text-gray-900 mb-4">PA2L : Application de Matchmaking & Réservation</h3>
-                
-                <p class="text-gray-600 leading-relaxed mb-8">
-                    PA2L est une application mobile conçue pour connecter les joueurs de padel avec des partenaires de même niveau. Elle facilite la réservation de terrains dans les clubs à proximité et propose un système de classement engageant inspiré des jeux vidéo compétitifs.
-                </p>
+                <div class="w-full md:w-3/5 p-8 md:p-12">
+                    <div class="flex items-center mb-6">
+                        <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mr-3">Projet de Stage</span>
+                        <span class="text-gray-500 text-sm">Application Mobile & UX/UI</span>
+                    </div>
 
-                <!-- Liste des fonctionnalités -->
-                <div class="grid gap-6">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">PA2L : Application de Matchmaking & Réservation</h3>
                     
-                    <!-- Feature 1 -->
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-padel-blue text-xl">
-                            
-                        </div>
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-900">Carte Interactive</h4>
-                            <p class="text-sm text-gray-600 mt-1">Affichage des clubs de padel à proximité avec indicateurs de distance, notes et créneaux disponibles.</p>
-                        </div>
-                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        PA2L est une application mobile conçue pour connecter les joueurs de padel avec des partenaires de même niveau. Elle facilite la réservation de terrains dans les clubs à proximité et propose un système de classement engageant inspiré des jeux vidéo compétitifs.
+                    </p>
 
-                    <!-- Feature 2 -->
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-padel-blue text-xl">
-                            
+                    <div class="grid gap-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-padel-blue text-xl"></div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">Carte Interactive</h4>
+                                <p class="text-sm text-gray-600 mt-1">Affichage des clubs de padel à proximité avec indicateurs de distance, notes et créneaux disponibles.</p>
+                            </div>
                         </div>
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-900">Matchmaking Intelligent</h4>
-                            <p class="text-sm text-gray-600 mt-1">Interface type "swipe" pour trouver des partenaires compatibles selon le niveau, avec chat intégré.</p>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-padel-blue text-xl"></div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">Matchmaking Intelligent</h4>
+                                <p class="text-sm text-gray-600 mt-1">Interface type "swipe" pour trouver des partenaires compatibles selon le niveau, avec chat intégré.</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center text-yellow-600 text-xl">
-                            🏆
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center text-yellow-600 text-xl">🏆</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">Système de Classement (Ranked)</h4>
+                                <p class="text-sm text-gray-600 mt-1">Inspiré de Call of Duty : Progression du Bronze à la Légende avec effets visuels et statistiques détaillées.</p>
+                            </div>
                         </div>
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-900">Système de Classement (Ranked)</h4>
-                            <p class="text-sm text-gray-600 mt-1">Inspiré de Call of Duty : Progression du Bronze à la Légende avec effets visuels et statistiques détaillées.</p>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-padel-blue text-xl">💳</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">Paiements Intégrés</h4>
+                                <p class="text-sm text-gray-600 mt-1">Intégration fluide de Stripe et Apple Pay avec synchronisation automatique du calendrier.</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-padel-blue text-xl">
-                            
-                        </div>
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-900">Paiements Intégrés</h4>
-                            <p class="text-sm text-gray-600 mt-1">Intégration fluide de Stripe et Apple Pay avec synchronisation automatique du calendrier.</p>
-                        </div>
-                    </div>
-                     <!-- Feature 5 -->
-                     <div class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-padel-blue text-xl">
-                            
-                        </div>
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-900">Design Sportif Moderne</h4>
-                            <p class="text-sm text-gray-600 mt-1">Interface audacieuse utilisant le Bleu Roi (#0052CC) et le Jaune Padel (#F7D229).</p>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-padel-blue text-xl"></div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">Design Sportif Moderne</h4>
+                                <p class="text-sm text-gray-600 mt-1">Interface audacieuse utilisant le Bleu Roi (#0052CC) et le Jaune Padel (#F7D229).</p>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
-<!---- la suite !!-->
-  <!-- ==========================================
-             PROJET 2 : M2L (E6)
-             ========================================== -->
-             <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 max-w-5xl mx-auto flex flex-col md:flex-row">
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 max-w-5xl mx-auto flex flex-col md:flex-row">
             
-            <!-- Visuel (Gauche - Style Java/Console) -->
-            <div class="w-full md:w-2/5 bg-gray-800 p-8 flex flex-col justify-center items-center text-white relative overflow-hidden">
-                
-                <h2 class="text-5xl font-extrabold mb-2 relative z-10 text-java-orange">M2L</h2>
-                <span class="text-gray-300 font-semibold tracking-wider relative z-10">GESTION EMPLOYÉS</span>
-                
-                <div class="mt-8 bg-white/10 backdrop-blur-sm p-4 rounded-lg text-sm text-center border border-gray-600">
-                    <p> Java </p>
-                    <p> Architecture 3-Tiers</p>
-                </div>
-            </div>
-
-            <!-- Contenu (Droite) -->
-            <div class="w-full md:w-3/5 p-8 md:p-12">
-                <div class="flex items-center mb-6">
-                    <span class="bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mr-3">Projet E6</span>
-                    <span class="text-gray-500 text-sm">Java & SQL</span>
-                </div>
-
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Application de Gestion des Ligues</h3>
-                
-                <p class="text-gray-600 leading-relaxed mb-6 text-sm">
-                    Évolution d'une application Java en ligne de commande (CLI). Passage d'une version mono-utilisateur statique à une version <strong>multi-utilisateurs</strong> avec base de données et architecture structurée.
-                </p>
-
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <!-- Objectif Architecture -->
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                        <h4 class="font-bold text-blue-700 text-sm mb-2 flex items-center">
-                            <span class="mr-2"></span> Architecture 3-Tiers
-                        </h4>
-                        <ul class="text-xs text-gray-600 space-y-1">
-                            <li><strong>1. Présentation :</strong> Interface CLI (Dialogue utilisateur)</li>
-                            <li><strong>2. Métier :</strong> Logique de gestion Java</li>
-                            <li><strong>3. Données :</strong> Persistance (Base de données)</li>
-                        </ul>
-                    </div>
-
-                    <!-- Gestion des droits -->
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                        <h4 class="font-bold text-red-700 text-sm mb-2 flex items-center">
-                            <span class="mr-2"></span> Habilitations
-                        </h4>
-                        <ul class="text-xs text-gray-600 space-y-1">
-                            <li><strong>Employé :</strong> Lecture seule (Annuaire)</li>
-                            <li> <strong>Admin de Ligue :</strong> Écriture (Sa ligue uniquement)</li>
-                            <li> <strong>Super-Admin :</strong> Accès total + Gestion comptes</li>
-                        </ul>
+                <div class="w-full md:w-2/5 bg-gray-800 p-8 flex flex-col justify-center items-center text-white relative overflow-hidden">
+                    <h2 class="text-5xl font-extrabold mb-2 relative z-10 text-orange-400">M2L</h2>
+                    <span class="text-gray-300 font-semibold tracking-wider relative z-10">GESTION EMPLOYÉS</span>
+                    
+                    <div class="mt-8 bg-white/10 backdrop-blur-sm p-4 rounded-lg text-sm text-center border border-gray-600">
+                        <p> Java</p>
+                        <p> Architecture 3-Tiers</p>
                     </div>
                 </div>
 
-                <div class="mt-4 pt-4 border-t border-gray-100 mb-8">
-                    <p class="text-sm font-semibold text-gray-700">Compétences validées :</p>
-                    <div class="flex flex-wrap gap-2 mt-2">
-                        <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">Java POO</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">SQL</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">Sécurité (Droits)</span>
+                <div class="w-full md:w-3/5 p-8 md:p-12">
+                    <div class="flex items-center mb-6">
+                        <span class="bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mr-3">Projet E6</span>
+                        <span class="text-gray-500 text-sm">Java & SQL</span>
                     </div>
-                </div>
 
-                <!-- NOUVEAU : Documents Techniques (MCD & Arbre) -->
-                <div>
-                    <h4 class="font-bold text-gray-900 mb-4 flex items-center">
-                        <span class="mr-2">📂</span> Documentation Technique
-                    </h4>
-                    <div class="grid grid-cols-2 gap-4">
-                        <!-- Arbre Heuristique -->
-                        <div class="border border-gray-200 rounded-lg p-2 bg-gray-50 hover:bg-white hover:shadow-md transition cursor-pointer">
-                            <p class="text-xs font-semibold text-gray-500 mb-2 text-center">Arbre Heuristique</p>
-                            <!-- Image à remplacer -->
-                            <img src="Arbre heuristique (1).png" alt="Arbre Heuristique M2L" class="w-full h-32 object-contain rounded bg-white">
-                             <img src="Arbre heuristique (2).png" alt="Arbre Heuristique M2L" class="w-full h-32 object-contain rounded bg-white">
-                        </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Application de Gestion des Ligues</h3>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 text-sm">
+                        Évolution d'une application Java en ligne de commande (CLI). Passage d'une version mono-utilisateur statique à une version <strong>multi-utilisateurs</strong> avec base de données et architecture structurée.
+                    </p>
+
+                    <div class="mb-8">
+                        <h4 class="font-bold text-gray-900 text-sm mb-2">Contexte et Ressources Fournies</h4>
+                        <p class="text-sm text-gray-600 mb-4 bg-gray-50 p-3 rounded-lg border border-gray-200">
+                            Le projet initial consistait en un squelette d'application Java (code fourni). La logique de base était présente, mais manquait de persistance des données et de contrôles métier stricts.
+                        </p>
                         
-                        <!-- MCD -->
-                        <div class="border border-gray-200 rounded-lg p-2 bg-gray-50 hover:bg-white hover:shadow-md transition cursor-pointer">
-                            <p class="text-xs font-semibold text-gray-500 mb-2 text-center">Modèle Conceptuel (MCD)</p>
-                            <!-- Image à remplacer -->
-                            <img src="mcd ap8 modifé.jpg" alt="MCD Base de données" class="w-full h-32 object-contain rounded bg-white">
+                        <h4 class="font-bold text-gray-900 text-sm mb-2">Mon Travail (Réalisations)</h4>
+                        <ul class="text-sm text-gray-600 list-disc list-inside space-y-1 bg-blue-50/50 p-4 rounded-lg border border-blue-100">
+                            <li><strong>Gestion Temporelle :</strong> Ajout des dates d'arrivée et de départ pour les employés (<code>LocalDate</code>).</li>
+                            <li><strong>Robustesse :</strong> Mise en place d'exceptions personnalisées pour contrôler la cohérence des dates.</li>
+                            <li><strong>Interface (CLI) :</strong> Modification des menus pour saisir les dates et gérer l'administrateur d'une ligue.</li>
+                            <li><strong>Qualité logicielle :</strong> Implémentation de tests unitaires (JUnit) sur la couche métier.</li>
+                            <li><strong>Conception :</strong> Mise à jour du MCD et réalisation de l'arbre heuristique des menus.</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-blue-700 text-sm mb-2 flex items-center">
+                                <span class="mr-2"></span> Architecture 3-Tiers
+                            </h4>
+                            <ul class="text-xs text-gray-600 space-y-1">
+                                <li><strong>1. Présentation :</strong> Interface CLI (Dialogue utilisateur)</li>
+                                <li><strong>2. Métier :</strong> Logique de gestion Java</li>
+                                <li><strong>3. Données :</strong> Persistance (Base de données)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-red-700 text-sm mb-2 flex items-center">
+                                <span class="mr-2"></span> Habilitations
+                            </h4>
+                            <ul class="text-xs text-gray-600 space-y-1">
+                                <li><strong>Employé :</strong> Lecture seule (Annuaire)</li>
+                                <li> <strong>Admin de Ligue :</strong> Écriture (Sa ligue uniquement)</li>
+                                <li> <strong>Super-Admin :</strong> Accès total + Gestion comptes</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
 
+                    <div class="mt-4 pt-4 border-t border-gray-100 mb-8">
+                        <p class="text-sm font-semibold text-gray-700">Compétences validées :</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">Java POO</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">SQL</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">Sécurité (Droits)</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">Tests Unitaires</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-4 flex items-center">
+                            <span class="mr-2">📂</span> Documentation Technique & Aperçu
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            
+                            <div class="border border-gray-200 rounded-lg p-2 bg-gray-50 hover:bg-white hover:shadow-md transition cursor-pointer">
+                                <p class="text-xs font-semibold text-gray-500 mb-2 text-center">Arbre Heuristique</p>
+                                <img src="Arbre heuristique (1).png" alt="Arbre Heuristique M2L" class="w-full h-24 object-contain rounded bg-white">
+                            </div>
+                            
+                            <div class="border border-gray-200 rounded-lg p-2 bg-gray-50 hover:bg-white hover:shadow-md transition cursor-pointer">
+                                <p class="text-xs font-semibold text-gray-500 mb-2 text-center">Modèle Conceptuel (MCD)</p>
+                                <img src="mcd ap8 modifé.jpg" alt="MCD Base de données" class="w-full h-24 object-contain rounded bg-white">
+                            </div>
+
+                            <div class="border border-gray-200 rounded-lg p-2 bg-gray-50 hover:bg-white hover:shadow-md transition cursor-pointer">
+                                <p class="text-xs font-semibold text-gray-500 mb-2 text-center">Aperçu Console </p>
+                                <img src="preuve.png" alt="Capture d'écran de la console" class="w-full h-24 object-cover rounded bg-black">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="https://github.com/yvaan78/personnel.git" target="_blank" class="px-6 py-3 bg-gray-900 text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition flex items-center">
+                             Voir le Code Source
+                        </a>
+                        <a href="https://github.com/yvaan78/personnel.git" target="_blank" class="px-6 py-3 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition flex items-center">
+                             Voir la Documentation
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
-
-    </main>
-</body>
-</html>
-    </main>
-
+    </div>
 </body>
 </html>
