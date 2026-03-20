@@ -5,211 +5,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veille Technologique - Mon Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+<body class="bg-slate-900 text-slate-100 font-sans flex flex-col min-h-screen">
 
     <!-- BARRE DE NAVIGATION -->
-    <nav class="bg-white shadow-md relative z-20">
+    <nav class="bg-slate-900/90 shadow-md relative z-20 backdrop-blur-md border-b border-slate-800">
         <div class="container mx-auto px-6 py-4 flex justify-center items-center">
             <div class="space-x-4 hidden md:flex">
-                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Présentation</a>
-                <a href="apropos.html" class="text-gray-600 hover:text-blue-600 transition">À propos</a>
+                <a href="index.html" class="text-slate-300 hover:text-pink-400 transition">Présentation</a>
+                <a href="apropos.html" class="text-slate-300 hover:text-pink-400 transition">À propos</a>
                 <!-- Lien Actif -->
-                <a href="veille.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Veille</a>
-                <a href="Tableau_de_synthese_E5.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 transition">Tableau de Synthèse</a>
-                <a href="Cv étudiant yvan.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 transition">CV</a>
-                <a href="projets.html" class="text-gray-600 hover:text-blue-600 transition">Mes Projets</a>
+                <a href="veille.html" class="text-pink-500 font-semibold border-b-2 border-pink-500">Veille</a>
+                <a href="Tableau_de_synthese_E5.pdf" target="_blank" class="text-slate-300 hover:text-pink-400 transition">Tableau de Synthèse</a>
+                <a href="Cv étudiant yvan.pdf" target="_blank" class="text-slate-300 hover:text-pink-400 transition">CV</a>
+                <a href="projets.html" class="text-slate-300 hover:text-pink-400 transition">Mes Projets</a>
             </div>
         </div>
     </nav>
 
+    <!-- MAIN AVEC FOND D'ÉCRAN SONIC -->
     <main class="flex-grow relative py-20"
           style="background-image: url('backgroundsonic.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
         
-        <!-- Calque blanc transparent pour la lisibilité (Opacité 85%) -->
-        <div class="absolute inset-0 bg-white/85"></div>
+        <!-- Calque foncé transparent pour assombrir le fond (Opacité 85%) -->
+        <div class="absolute inset-0 bg-slate-900/85"></div>
 
         <div class="container mx-auto px-6 relative z-10">
 
-    <!-- CONTENU PRINCIPAL -->
-    <main class="container mx-auto px-6 py-12 flex-grow">
-        
-        <div class="text-center mb-16">
-            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Sujet de Veille</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-4 mb-6">L'IA dans le Développement Web</h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Comment l'Intelligence Artificielle transforme-t-elle le métier de développeur, de l'écriture du code à l'expérience utilisateur ?
-                space-x-4</p>
-                 Pour réaliser ma veille technologique sur l’intelligence artificielle dans le développement web, 
-                 j’ai consulté des articles récents directement sur Google et complété mes recherches par des vidéos pédagogiques sur YouTube.
-                 Cette démarche m’a permis de suivre l’actualité et de comprendre les dernières évolutions du domaine.
-            </p>
-        </div>
-
-        <!-- Section 1 : Constat & Définition -->
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-12 flex flex-col md:flex-row">
-            <div class="md:w-1/3 bg-gradient-to-br from-indigo-600 to-blue-500 p-8 text-white flex flex-col justify-center">
-                <h2 class="text-2xl font-bold mb-4">Une Révolution en cours</h2>
-                <p class="opacity-90 leading-relaxed">
-                    L'IA n'est plus un simple assistant. Elle est devenue un Outil quotidien pour les développeurs, capable de générer du code, de déboguer, de créer et d'optimiser des applications en temps réel.
-                </p>
+            <!-- En-tête de la page -->
+            <div class="text-center mb-16">
+                <span class="bg-pink-900/50 text-pink-300 border border-pink-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Sujet de Veille</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mt-4 mb-6 drop-shadow-md">L'IA dans le Développement Web</h1>
+                <div class="text-lg text-slate-300 max-w-3xl mx-auto space-y-4">
+                    <p>
+                        Comment l'Intelligence Artificielle transforme-t-elle le métier de développeur, de l'écriture du code à l'expérience utilisateur ?
+                    </p>
+                    <p>
+                        Pour réaliser ma veille technologique sur l’intelligence artificielle dans le développement web, j’ai consulté des articles récents directement sur Google et complété mes recherches par des vidéos pédagogiques sur YouTube. Cette démarche m’a permis de suivre l’actualité et de comprendre les dernières évolutions du domaine.
+                    </p>
+                </div>
             </div>
-            <div class="md:w-2/3 p-8">
-                <h3 class="text-xl font-bold text-gray-900 mb-4">Les 3 Piliers de l'IA dans le developpement Web</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="text-center">
-                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-3"></div>
-                        <h4 class="font-bold text-sm">Productivité</h4>
-                        <p class="text-xs text-gray-500 mt-1">Automatisation des tâches répétitives et du code fonctionnelles.</p>
+
+            <!-- Section 1 : Constat & Définition -->
+            <div class="bg-slate-800/95 backdrop-blur rounded-2xl shadow-lg border border-slate-700 overflow-hidden mb-16 flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-gradient-to-br from-pink-600 to-purple-700 p-8 text-white flex flex-col justify-center relative overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-white rounded-full opacity-10 blur-2xl"></div>
+                    <h2 class="text-2xl font-bold mb-4 relative z-10">Une Révolution en cours</h2>
+                    <p class="opacity-90 leading-relaxed relative z-10">
+                        L'IA n'est plus un simple assistant. Elle est devenue un outil quotidien pour les développeurs, capable de générer du code, de déboguer, de créer et d'optimiser des applications en temps réel.
+                    </p>
+                </div>
+                <div class="md:w-2/3 p-8">
+                    <h3 class="text-xl font-bold text-white mb-6">Les 3 Piliers de l'IA dans le développement Web</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Pilier 1 -->
+                        <div class="text-center p-4 bg-slate-700/30 rounded-xl border border-slate-600/50">
+                            <div class="w-12 h-12 bg-pink-900/50 text-pink-400 rounded-full flex items-center justify-center mx-auto mb-3 border border-pink-700/50">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                            <h4 class="font-bold text-slate-200 text-sm">Productivité</h4>
+                            <p class="text-xs text-slate-400 mt-2">Automatisation des tâches répétitives et du code fonctionnel.</p>
+                        </div>
+                        <!-- Pilier 2 -->
+                        <div class="text-center p-4 bg-slate-700/30 rounded-xl border border-slate-600/50">
+                            <div class="w-12 h-12 bg-cyan-900/50 text-cyan-400 rounded-full flex items-center justify-center mx-auto mb-3 border border-cyan-700/50">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            </div>
+                            <h4 class="font-bold text-slate-200 text-sm">Qualité</h4>
+                            <p class="text-xs text-slate-400 mt-2">Détection de bugs, suggestions d'optimisation et tests unitaires.</p>
+                        </div>
+                        <!-- Pilier 3 -->
+                        <div class="text-center p-4 bg-slate-700/30 rounded-xl border border-slate-600/50">
+                            <div class="w-12 h-12 bg-purple-900/50 text-purple-400 rounded-full flex items-center justify-center mx-auto mb-3 border border-purple-700/50">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            </div>
+                            <h4 class="font-bold text-slate-200 text-sm">Créativité</h4>
+                            <p class="text-xs text-slate-400 mt-2">La génération d'images, de textes et d'interfaces utilisateur.</p>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-3"></div>
-                        <h4 class="font-bold text-sm">Qualité</h4>
-                        <p class="text-xs text-gray-500 mt-1">Détection de bugs, suggestions d'optimisation et tests unitaires.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-3"></div>
-                        <h4 class="font-bold text-sm">Créativité</h4>
-                        <p class="text-xs text-gray-500 mt-1">La génération d'images, de textes et d'interfaces utilisateur.</p>
-                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Section 2 : Les Outils du Marché -->
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Les Outils Incontournables</h2>
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-            
-            <!-- Outil 1 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="flex items-center mb-4">
-                    <span class="text-3xl mr-3"></span>
-                    <h3 class="text-xl font-bold">GitHub Copilot</h3>
-                </div>
-                <p class="text-gray-600 text-sm mb-4">
-                    L'assistant le plus connu, intégré directement dans VS Code. Il complète le code en temps réel et propose des fonctions entières basées sur le contexte.
-                </p>
-                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Autocomplétion</span>
-            </div>
-
-            <!-- Outil 2 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="flex items-center mb-4">
-                    <span class="text-3xl mr-3"></span>
-                    <h3 class="text-xl font-bold">ChatGPT</h3>
-                </div>
-                <p class="text-gray-600 text-sm mb-4">
-                 
-                </p>
-                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Assistance & Apprentissage</span>
-            </div>
-
-            <!-- Outil 3 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="flex items-center mb-4">
-                    <span class="text-3xl mr-3"></span>
-                    <h3 class="text-xl font-bold">Deepseek</h3>
-                </div>
-                <p class="text-gray-600 text-sm mb-4">
-                    La nouvelle génération d'outils capables de générer des interfaces complètes (UI) et des applications fonctionnelles à partir d'un simple prompt.
-                </p>
-                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Génération d'UI</span>
-            </div>
-        </div>
-
-        <!-- Section 3 : Analyse Critique (Le plus important pour le jury !) -->
-        <div class="grid md:grid-cols-2 gap-12">
-            
-            <!-- Avantages -->
-            <div>
-                <h3 class="text-2xl font-bold text-green-700 mb-6 flex items-center">
-                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Les Opportunités
-                </h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">1</span>
-                        <p class="text-gray-700"><strong>Accélération du développement :</strong> Réduction drastique du temps passé sur le code "boilerplate" (structure de base).</p>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">2</span>
-                        <p class="text-gray-700"><strong>Apprentissage continu :</strong> L'IA agit comme un tuteur personnel pour expliquer des erreurs ou de nouveaux concepts afin de pouvoir comprendre.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">3</span>
-                        <p class="text-gray-700"><strong>Accessibilité :</strong> Facilite l'entrée dans le code pour les débutants grâce aux explications en langage naturel.</p>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Limites / Risques -->
-            <div>
-                <h3 class="text-2xl font-bold text-red-700 mb-6 flex items-center">
-                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-                    Les Menaces
-                </h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <span class="bg-red-100 text-red-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">1</span>
-                        <p class="text-gray-700"><strong>Qualité du code & Sécurité :</strong> L'IA peut générer du code faillible ou obsolète. La relecture humaine reste indispensable.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="bg-red-100 text-red-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">2</span>
-                        <p class="text-gray-700"><strong>Dépendance :</strong> Le risque de ne plus savoir coder "from scratch" mais encore de ne plus savoir coder tout court.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="bg-red-100 text-red-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1">3</span>
-                        <p class="text-gray-700"><strong>Propriété intellectuelle :</strong> Questions juridiques sur l'origine du code généré par les modèles.</p>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-        <!-- Conclusion -->
-        <div class="mt-16 bg-blue-50 p-8 rounded-2xl text-center border border-blue-100">
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Conclusion : Le développeur "Pilote"</h3>
-            <p class="text-blue-800 max-w-2xl mx-auto">
-                L'IA remplacera les developpeurs bas niveau, et les développeurs qui surconsomment l'IA seront également remplacés. De nos jours, les entreprises cherchent des developpeurs qui savent "coder du pur" sans intelligence Artificielle.
-            </p>
-        </div>
-
-        <!-- Sources et Références (Nouvelle Section) -->
-        <div class="mt-16 border-t border-gray-200 pt-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Sources et Références</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+            <!-- Section 2 : Les Outils du Marché -->
+            <h2 class="text-3xl font-bold text-white mb-8 text-center drop-shadow-sm">Les Outils Incontournables</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
                 
-                <!-- Source 1 : Digidop -->
-                <article class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition">
-                    <h4 class="font-bold text-indigo-700 mb-2">Digidop : Révolution Technologique</h4>
-                    <p class="text-sm text-gray-600 mb-4 h-20 overflow-hidden">
-                        L'article détaille comment l'IA transforme le métier, de l'émergence d'outils comme Claude et Cursor, jusqu'à l'évolution du développeur vers un rôle de superviseur et d'architecte.
+                <!-- Outil 1 -->
+                <div class="bg-slate-800/95 backdrop-blur p-6 rounded-xl shadow-lg border border-slate-700 hover:border-pink-500 hover:shadow-pink-500/20 transition group">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded bg-slate-700 flex items-center justify-center mr-3 text-slate-300 group-hover:text-pink-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">GitHub Copilot</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6">
+                        L'assistant le plus connu, intégré directement dans VS Code. Il complète le code en temps réel et propose des fonctions entières basées sur le contexte.
                     </p>
-                    <a href="https://www.digidop.com/fr/blog/ia-et-developpement-web-revolution-technologique-en-cours" target="_blank" class="text-sm font-semibold text-blue-600 hover:underline">Lire l'article &rarr;</a>
-                </article>
+                    <span class="text-xs font-semibold bg-slate-900 text-pink-400 border border-slate-600 px-3 py-1 rounded-full">Autocomplétion</span>
+                </div>
 
-                <!-- Source 2 : iQuesta -->
-                <article class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition">
-                    <h4 class="font-bold text-indigo-700 mb-2">iQuesta : L'Avenir des Développeurs</h4>
-                    <p class="text-sm text-gray-600 mb-4 h-20 overflow-hidden">
-                        Une analyse affirmant que l'IA ne remplacera pas les développeurs mais deviendra un assistant indispensable. L'accent est mis sur la nécessité d'acquérir de nouvelles compétences pour rester compétitif.
+                <!-- Outil 2 -->
+                <div class="bg-slate-800/95 backdrop-blur p-6 rounded-xl shadow-lg border border-slate-700 hover:border-pink-500 hover:shadow-pink-500/20 transition group">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded bg-slate-700 flex items-center justify-center mr-3 text-slate-300 group-hover:text-pink-400 transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">ChatGPT</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6">
+                        Utilisé pour le brainstorming, l'explication de concepts complexes, la refactorisation de code ou la génération de documentation technique.
                     </p>
-                    <a href="https://www.iquesta.com/Article-Lia-Et-Lavenir-Des-Developpeurs-En-Informatique-Quoi-Attendre-228.html" target="_blank" class="text-sm font-semibold text-blue-600 hover:underline">Lire l'article &rarr;</a>
-                </article>
+                    <span class="text-xs font-semibold bg-slate-900 text-pink-400 border border-slate-600 px-3 py-1 rounded-full">Assistance & Apprentissage</span>
+                </div>
 
-                <!-- Source 3 : O'clock -->
-                <article class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition">
-                    <h4 class="font-bold text-red-700 mb-2">O'clock : Mise en garde Juniors</h4>
-                    <p class="text-sm text-gray-600 mb-4 h-20 overflow-hidden">
-                        Pourquoi il est déconseillé aux juniors d'utiliser ChatGPT trop tôt : cela freine l'apprentissage de la logique algorithmique et expose à des erreurs que seul un expert peut détecter.
+                <!-- Outil 3 -->
+                <div class="bg-slate-800/95 backdrop-blur p-6 rounded-xl shadow-lg border border-slate-700 hover:border-pink-500 hover:shadow-pink-500/20 transition group">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded bg-slate-700 flex items-center justify-center mr-3 text-slate-300 group-hover:text-pink-400 transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Deepseek</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6">
+                        La nouvelle génération d'outils capables de générer des interfaces complètes (UI) et des applications fonctionnelles à partir d'un simple prompt.
                     </p>
-                    <a href="https://oclock.io/pourquoi-on-deconseille-aux-jeunes-developpeurs-dutiliser-chatgpt" target="_blank" class="text-sm font-semibold text-blue-600 hover:underline">Lire l'article &rarr;</a>
-                </article>
+                    <span class="text-xs font-semibold bg-slate-900 text-pink-400 border border-slate-600 px-3 py-1 rounded-full">Génération d'UI</span>
+                </div>
+            </div>
+
+            <!-- Section 3 : Analyse Critique (Le plus important pour le jury !) -->
+            <div class="grid md:grid-cols-2 gap-12 bg-slate-800/95 backdrop-blur p-8 md:p-10 rounded-2xl shadow-lg border border-slate-700 mb-16">
+                
+                <!-- Avantages -->
+                <div>
+                    <h3 class="text-2xl font-bold text-cyan-400 mb-6 flex items-center border-b border-slate-700 pb-3">
+                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Les Opportunités
+                    </h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start">
+                            <span class="bg-cyan-900/50 text-cyan-400 border border-cyan-700/50 rounded-full min-w-[1.5rem] h-6 flex items-center justify-center text-xs font-bold mr-4 mt-0.5">1</span>
+                            <p class="text-slate-300 text-sm leading-relaxed"><strong class="text-white">Accélération du développement :</strong> Réduction drastique du temps passé sur le code "boilerplate" (structure de base).</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-cyan-900/50 text-cyan-400 border border-cyan-700/50 rounded-full min-w-[1.5rem] h-6 flex items-center justify-center text-xs font-bold mr-4 mt-0.5">2</span>
+                            <p class="text-slate-300 text-sm leading-relaxed"><strong class="text-white">Apprentissage continu :</strong> L'IA agit comme un tuteur personnel pour expliquer des erreurs ou de nouveaux concepts afin de pouvoir comprendre.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-cyan-900/50 text-cyan-400 border border-cyan-700/50 rounded-full min-w-[1.5rem] h-6 flex items-center justify-center text-xs font-bold mr-4 mt-0.5">3</span>
+                            <p class="text-slate-300 text-sm leading-relaxed"><strong class="text-white">Accessibilité :</strong> Facilite l'entrée dans le code pour les débutants grâce aux explications en langage naturel.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Limites / Risques -->
+                <div>
+                    <h3 class="text-2xl font-bold text-red-400 mb-6 flex items-center border-b border-slate-700 pb-3">
+                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        Les Menaces
+                    </h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start">
+                            <span class="bg-red-900/50 text-red-400 border border-red-700/50 rounded-full min-w-[1.5rem] h-6 flex items-center justify-center text-xs font-bold mr-4 mt-0.5">1</span>
+                            <p class="text-slate-300 text-sm leading-relaxed"><strong class="text-white">Qualité du code & Sécurité :</strong> L'IA peut générer du code faillible ou obsolète. La relecture humaine reste indispensable.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-red-900/50 text-red-400 border border-red-700/50 rounded-full min-w-[1.5rem] h-6 flex items-center justify-center text-xs font-bold mr-4 mt-0.5">2</span>
+                            <p class="text-slate-300 text-sm leading-relaxed"><strong class="text-white">Dépendance :</strong> Le risque de ne plus savoir coder "from scratch" mais encore de ne plus savoir coder tout court.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-red-900/50 text-red-400 border border-red-700/50 rounded-full min-w-[1.5rem] h-6 flex items-center justify-center text-xs font-bold mr-4 mt-0.5">3</span>
+                            <p class="text-slate-300 text-sm leading-relaxed"><strong class="text-white">Propriété intellectuelle :</strong> Questions juridiques sur l'origine du code généré par les modèles.</p>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
-        </div>
 
+            <!-- Conclusion -->
+            <div class="bg-pink-900/20 p-8 rounded-2xl text-center border border-pink-500/30 backdrop-blur">
+                <h3 class="text-xl font-bold text-pink-400 mb-4">Conclusion : Le développeur "Pilote"</h3>
+                <p class="text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                    L'IA remplacera les développeurs bas niveau, et les développeurs qui surconsomment l'IA seront également remplacés. De nos jours, les entreprises cherchent des développeurs qui savent "coder du pur" sans intelligence artificielle, pour en faire des superviseurs éclairés.
+                </p>
+            </div>
+
+            <!-- Sources et Références (Nouvelle Section) -->
+            <div class="mt-20 border-t border-slate-700 pt-12">
+                <h2 class="text-2xl font-bold text-white mb-8 text-center">Sources et Références</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- lien numéro 1-->
+                    <article class="bg-slate-800/95 backdrop-blur p-6 rounded-lg border border-slate-700 hover:border-pink-500 transition shadow-lg">
+                        <h4 class="font-bold text-pink-400 mb-3">Digidop : Révolution Technologique</h4>
+                        <p class="text-sm text-slate-400 mb-6 h-20 overflow-hidden leading-relaxed">
+                            L'article détaille comment l'IA transforme le métier, de l'émergence d'outils comme Claude et Cursor, jusqu'à l'évolution du développeur vers un rôle de superviseur et d'architecte.
+                        </p>
+                        <a href="https://www.digidop.com/fr/blog/ia-et-developpement-web-revolution-technologique-en-cours" target="_blank" class="text-sm font-semibold text-cyan-400 hover:text-cyan-300 flex items-center">
+                            Lire l'article 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </article>
+
+                    <!-- lien numéro 2-->
+                    <article class="bg-slate-800/95 backdrop-blur p-6 rounded-lg border border-slate-700 hover:border-pink-500 transition shadow-lg">
+                        <h4 class="font-bold text-pink-400 mb-3">iQuesta : L'Avenir des Développeurs</h4>
+                        <p class="text-sm text-slate-400 mb-6 h-20 overflow-hidden leading-relaxed">
+                            Une analyse affirmant que l'IA ne remplacera pas les développeurs mais deviendra un assistant indispensable. L'accent est mis sur la nécessité d'acquérir de nouvelles compétences.
+                        </p>
+                        <a href="https://www.iquesta.com/Article-Lia-Et-Lavenir-Des-Developpeurs-En-Informatique-Quoi-Attendre-228.html" target="_blank" class="text-sm font-semibold text-cyan-400 hover:text-cyan-300 flex items-center">
+                            Lire l'article
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </article>
+
+                    <!-- lien numéro 3 -->
+                    <article class="bg-slate-800/95 backdrop-blur p-6 rounded-lg border border-slate-700 hover:border-pink-500 transition shadow-lg">
+                        <h4 class="font-bold text-pink-400 mb-3">O'clock : Mise en garde Juniors</h4>
+                        <p class="text-sm text-slate-400 mb-6 h-20 overflow-hidden leading-relaxed">
+                            Pourquoi il est déconseillé aux juniors d'utiliser ChatGPT trop tôt : cela freine l'apprentissage de la logique algorithmique et expose à des erreurs que seul un expert peut détecter.
+                        </p>
+                        <a href="https://oclock.io/pourquoi-on-deconseille-aux-jeunes-developpeurs-dutiliser-chatgpt" target="_blank" class="text-sm font-semibold text-cyan-400 hover:text-cyan-300 flex items-center">
+                            Lire l'article
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
     </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="bg-slate-950 text-white py-8 border-t border-slate-800">
+        <div class="container mx-auto px-6 flex justify-center">
+            <a href="https://github.com/yvaan78" class="text-slate-400 hover:text-pink-400 transition flex items-center gap-2 font-medium">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+            </a>
+        </div>
+    </footer>
 
 </body>
 </html>
